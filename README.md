@@ -7,9 +7,9 @@ This package sets up [Redis](http://redis.io) and [PHPRedMin](https://github.com
 Clone this repository into VVV's `www` directory, then reprovision VVV:
 
 ```
-cd path/to/vvv/www
-git clone https://github.com/goblindegook/VVV-Redis redis.vvv
-vagrant provision
+$ cd path/to/vvv/www
+$ git clone https://github.com/goblindegook/VVV-Redis redis.vvv
+$ vagrant provision
 ```
 
 Once installed, a web-based Redis management interface becomes available under [http://redis.vvv](http://redis.vvv) and you may begin using Redis on your local WordPress development installs through one of these plugins:
