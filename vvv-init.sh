@@ -6,9 +6,7 @@ PHPREDMIN_CONF="/etc/supervisor/conf.d/phpredmin.conf"
 
 echo " * Setting up Redis..."
 sudo apt-get update
-sudo apt-get install redis-server php5-redis
-sudo apt-get install gearman-server php5-gearman
-sudo apt-get install supervisor
+sudo apt-get -y install redis-server php5-redis gearman-server php5-gearman supervisor
 sudo service php5-fpm restart
 
 if [ ! -d "$PHPREDMIN_DIR" ]; then
